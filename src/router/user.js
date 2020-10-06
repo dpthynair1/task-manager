@@ -144,6 +144,7 @@ res.status(400).send({error: error.message})
 
 })
 
+//delete profile pic
 router.delete('/users/me/avatar',auth,async(req,res) => {
 
     req.user.avatar = undefined
